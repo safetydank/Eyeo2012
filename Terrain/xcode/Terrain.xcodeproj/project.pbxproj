@@ -44,9 +44,6 @@
 		E15E57F2156A142D00F783FF /* sphere.frag in Resources */ = {isa = PBXBuildFile; fileRef = E15E57F1156A142D00F783FF /* sphere.frag */; };
 		E16B012E156A00100023CA6F /* node.vert in Resources */ = {isa = PBXBuildFile; fileRef = E16B012D156A00100023CA6F /* node.vert */; };
 		E16B0130156A00450023CA6F /* node.frag in Resources */ = {isa = PBXBuildFile; fileRef = E16B012F156A00450023CA6F /* node.frag */; };
-		E1761F1B1554FF4E0032ACFA /* libfmodex.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E1761DE71554FF4D0032ACFA /* libfmodex.dylib */; };
-		E1761FDF1554FF4E0032ACFA /* Fmodex3DSoundPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1761F091554FF4D0032ACFA /* Fmodex3DSoundPlayer.cpp */; };
-		E1761FE01554FF4E0032ACFA /* FmodexPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1761F0A1554FF4D0032ACFA /* FmodexPlayer.cpp */; };
 		E188575015735D0C007024DB /* iconTerrain.png in Resources */ = {isa = PBXBuildFile; fileRef = E188574F15735D0C007024DB /* iconTerrain.png */; };
 		E18A928815722683007E3AB0 /* cubeNegX.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E18A928215722683007E3AB0 /* cubeNegX.jpg */; };
 		E18A928915722683007E3AB0 /* cubeNegY.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E18A928315722683007E3AB0 /* cubeNegY.jpg */; };
@@ -107,19 +104,6 @@
 		E15E57F1156A142D00F783FF /* sphere.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = sphere.frag; path = ../resources/sphere.frag; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.glsl; };
 		E16B012D156A00100023CA6F /* node.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = node.vert; path = ../resources/node.vert; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.glsl; };
 		E16B012F156A00450023CA6F /* node.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = node.frag; path = ../resources/node.frag; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.glsl; };
-		E1761DD91554FF4D0032ACFA /* Fmodex3DSoundPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fmodex3DSoundPlayer.h; sourceTree = "<group>"; };
-		E1761DDA1554FF4D0032ACFA /* FmodexPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FmodexPlayer.h; sourceTree = "<group>"; };
-		E1761DDD1554FF4D0032ACFA /* fmod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod.h; sourceTree = "<group>"; };
-		E1761DDE1554FF4D0032ACFA /* fmod.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = fmod.hpp; sourceTree = "<group>"; };
-		E1761DDF1554FF4D0032ACFA /* fmod_codec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_codec.h; sourceTree = "<group>"; };
-		E1761DE01554FF4D0032ACFA /* fmod_dsp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_dsp.h; sourceTree = "<group>"; };
-		E1761DE11554FF4D0032ACFA /* fmod_errors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_errors.h; sourceTree = "<group>"; };
-		E1761DE21554FF4D0032ACFA /* fmod_memoryinfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_memoryinfo.h; sourceTree = "<group>"; };
-		E1761DE31554FF4D0032ACFA /* fmod_output.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_output.h; sourceTree = "<group>"; };
-		E1761DE41554FF4D0032ACFA /* fmodlinux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmodlinux.h; sourceTree = "<group>"; };
-		E1761DE71554FF4D0032ACFA /* libfmodex.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libfmodex.dylib; sourceTree = "<group>"; };
-		E1761F091554FF4D0032ACFA /* Fmodex3DSoundPlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Fmodex3DSoundPlayer.cpp; sourceTree = "<group>"; };
-		E1761F0A1554FF4D0032ACFA /* FmodexPlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FmodexPlayer.cpp; sourceTree = "<group>"; };
 		E188574F15735D0C007024DB /* iconTerrain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iconTerrain.png; path = ../resources/iconTerrain.png; sourceTree = "<group>"; };
 		E18A928215722683007E3AB0 /* cubeNegX.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cubeNegX.jpg; path = ../resources/cubeNegX.jpg; sourceTree = "<group>"; };
 		E18A928315722683007E3AB0 /* cubeNegY.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cubeNegY.jpg; path = ../resources/cubeNegY.jpg; sourceTree = "<group>"; };
@@ -148,7 +132,6 @@
 				00B784B40FF439BC000DE1D7 /* AudioToolbox.framework in Frameworks */,
 				00B784B50FF439BC000DE1D7 /* AudioUnit.framework in Frameworks */,
 				00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */,
-				E1761F1B1554FF4E0032ACFA /* libfmodex.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,79 +250,9 @@
 			name = Shaders;
 			sourceTree = "<group>";
 		};
-		E1761DD71554FF4D0032ACFA /* FMOD-Ex-Cinder-Block */ = {
-			isa = PBXGroup;
-			children = (
-				E1761DD81554FF4D0032ACFA /* include */,
-				E1761DDB1554FF4D0032ACFA /* libs */,
-				E1761F081554FF4D0032ACFA /* src */,
-			);
-			name = "FMOD-Ex-Cinder-Block";
-			path = "../../../../cinder_master/blocks/FMOD-Ex-Cinder-Block";
-			sourceTree = "<group>";
-		};
-		E1761DD81554FF4D0032ACFA /* include */ = {
-			isa = PBXGroup;
-			children = (
-				E1761DD91554FF4D0032ACFA /* Fmodex3DSoundPlayer.h */,
-				E1761DDA1554FF4D0032ACFA /* FmodexPlayer.h */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		E1761DDB1554FF4D0032ACFA /* libs */ = {
-			isa = PBXGroup;
-			children = (
-				E1761DDC1554FF4D0032ACFA /* include */,
-				E1761DE51554FF4D0032ACFA /* lib */,
-			);
-			path = libs;
-			sourceTree = "<group>";
-		};
-		E1761DDC1554FF4D0032ACFA /* include */ = {
-			isa = PBXGroup;
-			children = (
-				E1761DDD1554FF4D0032ACFA /* fmod.h */,
-				E1761DDE1554FF4D0032ACFA /* fmod.hpp */,
-				E1761DDF1554FF4D0032ACFA /* fmod_codec.h */,
-				E1761DE01554FF4D0032ACFA /* fmod_dsp.h */,
-				E1761DE11554FF4D0032ACFA /* fmod_errors.h */,
-				E1761DE21554FF4D0032ACFA /* fmod_memoryinfo.h */,
-				E1761DE31554FF4D0032ACFA /* fmod_output.h */,
-				E1761DE41554FF4D0032ACFA /* fmodlinux.h */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		E1761DE51554FF4D0032ACFA /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				E1761DE61554FF4D0032ACFA /* osx */,
-			);
-			path = lib;
-			sourceTree = "<group>";
-		};
-		E1761DE61554FF4D0032ACFA /* osx */ = {
-			isa = PBXGroup;
-			children = (
-				E1761DE71554FF4D0032ACFA /* libfmodex.dylib */,
-			);
-			path = osx;
-			sourceTree = "<group>";
-		};
-		E1761F081554FF4D0032ACFA /* src */ = {
-			isa = PBXGroup;
-			children = (
-				E1761F091554FF4D0032ACFA /* Fmodex3DSoundPlayer.cpp */,
-				E1761F0A1554FF4D0032ACFA /* FmodexPlayer.cpp */,
-			);
-			path = src;
-			sourceTree = "<group>";
-		};
 		E1761FED1554FF510032ACFA /* Blocks */ = {
 			isa = PBXGroup;
 			children = (
-				E1761DD71554FF4D0032ACFA /* FMOD-Ex-Cinder-Block */,
 			);
 			name = Blocks;
 			sourceTree = "<group>";
@@ -478,8 +391,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1761FDF1554FF4E0032ACFA /* Fmodex3DSoundPlayer.cpp in Sources */,
-				E1761FE01554FF4E0032ACFA /* FmodexPlayer.cpp in Sources */,
 				E10E2C4D1569C0D600A408BE /* Terrain.cpp in Sources */,
 				E10E2CB41569F54600A408BE /* RDiffusion.cpp in Sources */,
 				E10E2CB51569F54600A408BE /* Room.cpp in Sources */,
@@ -546,11 +457,13 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = i386;
-				CINDER_PATH = ../../../../cinder_master;
+				CINDER_PATH = ../../../Cinder;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/boost\"";
-				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx;
 				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include";
 			};
@@ -561,11 +474,13 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = i386;
-				CINDER_PATH = ../../../../cinder_master;
+				CINDER_PATH = ../../../Cinder;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/boost\"";
-				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx;
 				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include";
 			};

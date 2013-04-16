@@ -86,7 +86,7 @@
 		5323E6B50EAFCA7E003A9687 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
 		53E3CDFB0E86099300238D2B /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8D1107320486CEB800E47090 /* Matter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Matter.app; path = Annihilation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D1107320486CEB800E47090 /* Annihilation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Annihilation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E105FC6D154DF34000AC6ED5 /* cubeNegX.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cubeNegX.jpg; path = ../resources/cubeNegX.jpg; sourceTree = "<group>"; };
 		E105FC6E154DF34000AC6ED5 /* cubeNegY.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cubeNegY.jpg; path = ../resources/cubeNegY.jpg; sourceTree = "<group>"; };
 		E105FC6F154DF34000AC6ED5 /* cubeNegZ.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cubeNegZ.jpg; path = ../resources/cubeNegZ.jpg; sourceTree = "<group>"; };
@@ -220,7 +220,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D1107320486CEB800E47090 /* Matter.app */,
+				8D1107320486CEB800E47090 /* Annihilation.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -432,7 +432,7 @@
 			name = Annihilation;
 			productInstallPath = "$(HOME)/Applications";
 			productName = Matter;
-			productReference = 8D1107320486CEB800E47090 /* Matter.app */;
+			productReference = 8D1107320486CEB800E47090 /* Annihilation.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -532,6 +532,8 @@
 		C01FCF4B08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
@@ -547,6 +549,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../../cinder_master/blocks/FMOD-Ex-Cinder-Block/libs/lib/osx\"",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_LDFLAGS = "\"$(CINDER_PATH)/lib/libcinder_d.a\"";
 				PRODUCT_NAME = Annihilation;
 				WRAPPER_EXTENSION = app;
@@ -556,6 +559,8 @@
 		C01FCF4C08A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_FAST_MATH = YES;
@@ -573,6 +578,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../../cinder_master/blocks/FMOD-Ex-Cinder-Block/libs/lib/osx\"",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_LDFLAGS = "\"$(CINDER_PATH)/lib/libcinder.a\"";
 				PRODUCT_NAME = Annihilation;
 				STRIP_INSTALLED_PRODUCT = YES;
@@ -585,7 +591,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = i386;
-				CINDER_PATH = ../../../../cinder_master;
+				CINDER_PATH = ../../../Cinder;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
@@ -601,7 +607,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = i386;
-				CINDER_PATH = ../../../../cinder_master;
+				CINDER_PATH = ../../../Cinder;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;

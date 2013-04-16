@@ -103,7 +103,7 @@ class StarApp : public AppBasic {
 	int					mThisFbo, mPrevFbo;
 	
 	// FONT
-	Font				mFontBlackS, mFontBlackM, mFontBlackL;
+	FontRef				mFontBlackS, mFontBlackM, mFontBlackL;
 	gl::TextureFontRef	mTextureFontS, mTextureFontM, mTextureFontL;
 	
 	int					mStage;
@@ -188,9 +188,9 @@ void StarApp::setup()
 								  );
 	
 	// FONTS
-	mFontBlackS			= Font( "Arial", 12 );
-	mFontBlackM			= Font( "Arial", 20 );
-	mFontBlackL			= Font( "Arial", 64 );
+	mFontBlackS			= Font::create( "Arial", 12 );
+	mFontBlackM			= Font::create( "Arial", 20 );
+	mFontBlackL			= Font::create( "Arial", 64 );
 	mTextureFontS		= gl::TextureFont::create( mFontBlackS );
 	mTextureFontM		= gl::TextureFont::create( mFontBlackM );
 	mTextureFontL		= gl::TextureFont::create( mFontBlackL );

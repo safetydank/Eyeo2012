@@ -16,8 +16,8 @@ public:
 		  float color, 
 		  std::string name, 
 		  std::string spectrum, 
-		  const ci::Font &fontS, 
-		  const ci::Font &fontM );
+		  const ci::FontRef fontS,
+		  const ci::FontRef fontM );
 	void update( const ci::Camera &cam, float scale );
 	void drawName( const ci::Vec2f &mousePos, float power, float alpha );
 

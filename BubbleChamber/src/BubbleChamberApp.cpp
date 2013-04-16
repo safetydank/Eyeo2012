@@ -287,7 +287,7 @@ void BubbleChamberApp::draw()
 	mGlowCubeShader.unbind();
 
 	if( mSaveFrames ){
-		writeImage( getHomeDirectory() + "BubbleChamber/" + toString( mNumSaveFrames ) + ".png", copyWindowSurface() );
+		writeImage( getHomeDirectory() / "BubbleChamber" / (toString( mNumSaveFrames ) + ".png"), copyWindowSurface() );
 		mNumSaveFrames ++;
 	}
 }

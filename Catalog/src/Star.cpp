@@ -15,7 +15,7 @@
 
 using namespace ci;
 
-Star::Star( Vec3f pos, float appMag, float absMag, float color, std::string name, std::string spectrum, const Font &fontS, const Font &fontM )
+Star::Star( Vec3f pos, float appMag, float absMag, float color, std::string name, std::string spectrum, const FontRef fontS, const FontRef fontM )
 	: mPos( pos ), mApparentMag( appMag ), mAbsoluteMag( absMag ), mColor( color ), mName( name )
 {
 	mInitPos		= mPos;

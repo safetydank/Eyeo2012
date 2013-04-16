@@ -485,7 +485,7 @@ void AntMillApp::draw()
 	}
 	
 	if( mSaveFrames ){
-		writeImage( getHomeDirectory() + "AntMill/" + toString( mNumSavedFrames ) + ".png", copyWindowSurface() );
+		writeImage( getHomeDirectory() / "AntMill" / (toString( mNumSavedFrames ) + ".png"), copyWindowSurface() );
 		mNumSavedFrames ++;
 	}
 }

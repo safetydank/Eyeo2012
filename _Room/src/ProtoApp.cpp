@@ -242,7 +242,7 @@ void ProtoApp::draw()
 	
 	// SAVE FRAMES
 	if( mSaveFrames && mNumSavedFrames < 5000 ){
-		writeImage( getHomeDirectory() + "Room/" + toString( mNumSavedFrames ) + ".png", copyWindowSurface() );
+		writeImage( getHomeDirectory() / "Room" / (toString( mNumSavedFrames ) + ".png"), copyWindowSurface() );
 		mNumSavedFrames ++;
 	}
 

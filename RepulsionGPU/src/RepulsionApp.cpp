@@ -475,7 +475,7 @@ void RepulsionApp::draw()
 	mShader.unbind();
 	
 	if( mSaveFrames && mNumSavedFrames < 15000 ){
-		writeImage( getHomeDirectory() + "RepulsionGPU/" + toString( mNumSavedFrames ) + ".png", copyWindowSurface() );
+		writeImage( getHomeDirectory() / "RepulsionGPU" / (toString( mNumSavedFrames ) + ".png"), copyWindowSurface() );
 		mNumSavedFrames ++;
 	}
 	

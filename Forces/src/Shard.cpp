@@ -104,10 +104,10 @@ void Shard::init( TriMesh *mesh, const Color &c )
 			mesh->appendTexCoord( t3 );
 			mesh->appendTexCoord( t4 );
 			
-			mesh->appendColorRGB( c );
-			mesh->appendColorRGB( c );
-			mesh->appendColorRGB( c );
-			mesh->appendColorRGB( c );
+			mesh->appendColorRgb( c );
+			mesh->appendColorRgb( c );
+			mesh->appendColorRgb( c );
+			mesh->appendColorRgb( c );
 		}
 		
 		Vec3f n1 = calcSurfaceNormal( tempV1, tempV2, v1 );
@@ -130,7 +130,7 @@ void Shard::init( TriMesh *mesh, const Color &c )
 	BOOST_FOREACH( Vec3f &v, tipPositions ){
 		mesh->appendVertex( v );
 		mesh->appendTexCoord( Vec2f( uc2, vc4 ) );
-		mesh->appendColorRGB( c );
+		mesh->appendColorRgb( c );
 		mesh->appendNormal( mDir.normalized() );
 	}
 

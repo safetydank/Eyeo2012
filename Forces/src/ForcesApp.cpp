@@ -336,7 +336,7 @@ void ForcesApp::draw()
 	gl::disableDepthRead();
 	
 	if( mSaveFrames ){
-		writeImage( getHomeDirectory() + "Forces/" + toString( mNumSavedFrames ) + ".png", copyWindowSurface() );
+		writeImage( getHomeDirectory() / "Forces" / (toString( mNumSavedFrames ) + ".png"), copyWindowSurface() );
 		mNumSavedFrames ++;
 	}
 	

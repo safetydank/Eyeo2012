@@ -94,7 +94,7 @@ class CatalogApp : public AppBasic {
 	gl::Fbo				mPositionFbo;
 	
 	// FONT
-	Font				mFontBlackT, mFontBlackS, mFontBlackM, mFontBlackL;
+	FontRef				mFontBlackT, mFontBlackS, mFontBlackM, mFontBlackL;
 	gl::TextureFontRef	mTextureFontT, mTextureFontS, mTextureFontM, mTextureFontL;
 	
 	// MOUSE
@@ -171,10 +171,10 @@ void CatalogApp::setup()
 	mSpectrumTex	= gl::Texture( loadImage( loadResource( "spectrum.png" ) ) );
 	
 	// FONTS
-	mFontBlackT		= Font( "Arial", 8 );
-	mFontBlackS		= Font( "Arial", 12 );
-	mFontBlackM		= Font( "Arial", 20 );
-	mFontBlackL		= Font( "Arial", 64 );
+	mFontBlackT		= Font::create( "Arial", 8 );
+	mFontBlackS		= Font::create( "Arial", 12 );
+	mFontBlackM		= Font::create( "Arial", 20 );
+	mFontBlackL		= Font::create( "Arial", 64 );
 	mTextureFontT	= gl::TextureFont::create( mFontBlackT );
 	mTextureFontS	= gl::TextureFont::create( mFontBlackS );
 	mTextureFontM	= gl::TextureFont::create( mFontBlackM );
